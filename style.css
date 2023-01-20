@@ -1,0 +1,73 @@
+body {
+    background-color: #242933;
+    color: #aebce4;
+    font-family: monospace;
+}
+
+.contenedor-formulario {
+    border: 1px solid #393f55;
+    border-radius: 5px;
+    background-color: #2f3644;
+    padding: 20px 40px 20px 40px;
+    max-width: 350px;
+    margin: 40px auto;
+    font-size: 18px;
+}
+
+.contenedor-formulario label {
+    display: block;
+    color: #9ca5c7;
+    margin-top: 25px;
+}
+
+.contenedor-formulario input {
+    color: #000000;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+}
+
+#formulario input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid {
+    background: url(images/success-icon.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+    background-origin: content-box;
+    border: 3px solid #4ab660;
+    border-radius: 5px;
+}
+
+.input-nombre:invalid, .input-email:invalid, .input-clave:invalid, .input-confirmarClave:invalid {
+    background: url(images/error-icon.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+    background-origin: content-box;
+    border: 3px solid #de5757;
+    border-radius: 5px;
+}
+
+span {
+    color:#de5757;
+    font-size: 12px;
+}
+
+.contenedor-formulario button {
+    color: #ffffff;
+    background-color: #6c63ff;
+    width: 100%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 3px 3px 3px 3px;
+    margin-top: 25px;
+}
